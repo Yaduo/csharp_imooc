@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HelloWord
 {
-    class Order
+    public class Order
     {
         public int Id { get; set; }
         public DateTime DatePlaced { get; set; }
