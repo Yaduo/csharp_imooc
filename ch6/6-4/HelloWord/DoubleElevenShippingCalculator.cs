@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HelloWord
 {
-    public class DoubleElevenShippingCalculator : IShippingCalculator
+    class DoubleElevenShippingCalculator : IShippingCalculator
     {
         public float CalculateShipping(Order order)
         {
