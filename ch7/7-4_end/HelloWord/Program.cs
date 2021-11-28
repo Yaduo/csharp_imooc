@@ -2,7 +2,6 @@
 
 namespace HelloWord
 {
-
     class Program
     {
         static void Main(string[] args)
@@ -32,6 +31,12 @@ namespace HelloWord
 
             Product product;
             dic.TryGetValue("123", out product);
+
+            Nullable<int> number = new Nullable<int>();
+            Console.WriteLine(number.HasValue);
+
+            var number2 = new Nullable<int>(5);
+            number2.GetValueOrDefault();
 
             Console.Read();
         }
