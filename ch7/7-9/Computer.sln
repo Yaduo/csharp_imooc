@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Computer", "Computer\Computer.csproj", "{981E0E5E-7578-4CBA-B291-BA887878EF02}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlashDisk", "FlashDisk\FlashDisk.csproj", "{A26DF1B4-64BB-4C35-997D-EC0855BE679F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSD", "SSD\SSD.csproj", "{3CE4B567-04C0-4C73-8A75-408296C88EAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{981E0E5E-7578-4CBA-B291-BA887878EF02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{981E0E5E-7578-4CBA-B291-BA887878EF02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{981E0E5E-7578-4CBA-B291-BA887878EF02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{981E0E5E-7578-4CBA-B291-BA887878EF02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A26DF1B4-64BB-4C35-997D-EC0855BE679F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A26DF1B4-64BB-4C35-997D-EC0855BE679F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A26DF1B4-64BB-4C35-997D-EC0855BE679F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A26DF1B4-64BB-4C35-997D-EC0855BE679F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CE4B567-04C0-4C73-8A75-408296C88EAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CE4B567-04C0-4C73-8A75-408296C88EAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CE4B567-04C0-4C73-8A75-408296C88EAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CE4B567-04C0-4C73-8A75-408296C88EAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3E6D4AF-B347-4B78-98A7-16EA63ACF6CD}
+	EndGlobalSection
+EndGlobal

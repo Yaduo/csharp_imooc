@@ -1,7 +1,8 @@
 ﻿using System;
+
 namespace FlashDisk
 {
-    public class FlashDisk : IUSB
+    public class FlashDisk : Computer.IUSB
     {
         public void GetInfo()
         {

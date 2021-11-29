@@ -1,7 +1,8 @@
 ﻿using System;
+
 namespace SSD
 {
-    public class SSD : IUSB
+    public class SSD : Computer.IUSB
     {
         public void GetInfo()
         {

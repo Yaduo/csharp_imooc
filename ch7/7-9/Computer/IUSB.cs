@@ -1,5 +1,6 @@
 ﻿using System;
-namespace SSD
+
+namespace Computer
 {
     public interface IUSB
     {
