@@ -2,7 +2,7 @@
 
 namespace FlashDisk
 {
-    public class FlashDisk : Computer.IUSB
+    public class FlashDisk : Computer.SDK.IUSB
     {
         public void GetInfo()
         {

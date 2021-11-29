@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Computer", "Computer\Comput
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlashDisk", "FlashDisk\FlashDisk.csproj", "{A26DF1B4-64BB-4C35-997D-EC0855BE679F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSD", "SSD\SSD.csproj", "{3CE4B567-04C0-4C73-8A75-408296C88EAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SSD", "SSD\SSD.csproj", "{3CE4B567-04C0-4C73-8A75-408296C88EAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Computer.SDK", "Computer.SDK\Computer.SDK.csproj", "{8E433608-DFB2-4701-AAA5-7EC0584798A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{3CE4B567-04C0-4C73-8A75-408296C88EAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CE4B567-04C0-4C73-8A75-408296C88EAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CE4B567-04C0-4C73-8A75-408296C88EAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E433608-DFB2-4701-AAA5-7EC0584798A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E433608-DFB2-4701-AAA5-7EC0584798A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E433608-DFB2-4701-AAA5-7EC0584798A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E433608-DFB2-4701-AAA5-7EC0584798A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

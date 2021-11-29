@@ -2,7 +2,7 @@
 
 namespace SSD
 {
-    public class SSD : Computer.IUSB
+    public class SSD : Computer.SDK.IUSB
     {
         public void GetInfo()
         {

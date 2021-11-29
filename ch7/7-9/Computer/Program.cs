@@ -3,6 +3,7 @@ using System.IO;
 using System.Runtime.Loader;
 using System.Collections;
 using System.Collections.Generic;
+using Computer.SDK;
 
 namespace Computer
 {
@@ -31,7 +32,7 @@ namespace Computer
                         if (i.Name == "IUSB")
                         {
                             IUSB device = (IUSB)Activator.CreateInstance(type);
-                            devicesList.Add((IUSB)device);
+                            devicesList.Add(device);
                         }
                     }
                 }
