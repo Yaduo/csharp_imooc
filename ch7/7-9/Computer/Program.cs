@@ -13,16 +13,18 @@ namespace Computer
         {
 
             // 程序路径
-            Console.WriteLine(Environment.CurrentDirectory);
+            var USBInterface = Path.Combine(Environment.CurrentDirectory, "USB");
+            Console.WriteLine(USBInterface);
 
             // 文件读写操作
-            var USBInterface = Path.Combine(Environment.CurrentDirectory, "USB");
-            var metaFiles = Directory.GetFiles(USBInterface);
+            var dllFiles = Directory.GetFiles(USBInterface);
+
+            // USB 设备列表
             var devicesList = new List<IUSB>();
 
-            foreach (var meta in metaFiles)
+            foreach (var dll in dllFiles)
             {
-                var assembly = AssemblyLoadContext.Default.LoadFromAssemblyPath(meta);
+                var assembly = AssemblyLoadContext.Default.LoadFromAssemblyPath(dll);
                 var types = assembly.GetTypes();
                 foreach (var type in types)
                 {
