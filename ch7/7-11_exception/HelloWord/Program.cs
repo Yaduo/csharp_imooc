@@ -20,7 +20,9 @@ namespace HelloWord
 
             try
             {
-                streamReader = new StreamReader("/Users/alex/Desktop/7-8 反射与元数据.pptx");
+                string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+                string fullName = Path.Combine(desktopPath, "123.txt");
+                streamReader = new StreamReader(fullName);
                 var connect = streamReader.ReadToEnd();
 
                 // 操作文件
@@ -37,13 +39,13 @@ namespace HelloWord
             }
             finally
             {
-                if(streamReader != null)
+                if (streamReader != null)
                 {
                     streamReader.Dispose();
                     Console.WriteLine("文件回收");
                 }
             }
-            
+
             Console.Read();
         }
     }
