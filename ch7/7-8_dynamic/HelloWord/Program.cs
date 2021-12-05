@@ -25,7 +25,7 @@ namespace HelloWord
             obj.ShowTable();
 
             //var methodInfo = obj.GetType().GetMethod("ShowTable");
-            //methodInfo.Invoke(null, null);
+            //methodInfo.Invoke(obj, null);
 
             obj = "hello world";
 
