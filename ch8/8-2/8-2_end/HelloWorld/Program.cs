@@ -5,26 +5,26 @@ namespace HelloWorld
 {
     class Program
     {
+        static void RedEyesRemovalFilter(Photo photo)
+        {
+            Console.WriteLine("去除红颜");
+        }
+
         static void Main(string[] args)
         {
-            var photo = Photo.load("photo.jpg");
-
-            var processor = new PhotoProcessor();
+            var photo = Photo.load("phtot.jpg");
 
             var filters = new PhotoFilters();
-            PhotoProcessor.PhotoFilterHandler filterHandler = filters.ApplyBrightness;
+
+            PhotoFilterHandler filterHandler = filters.ApplyBrightness;
             filterHandler += filters.ApplyContrast;
             filterHandler += filters.Resize;
-            filterHandler += RemoveRedEyesFilter;
+            filterHandler += RedEyesRemovalFilter;
 
+            var processor = new PhotoProcessor();
             processor.Process(photo, filterHandler);
 
             Console.Read();
-        }
-
-        static void RemoveRedEyesFilter(Photo photo)
-        {
-            Console.WriteLine("去除红眼");
         }
     }
 }
