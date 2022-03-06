@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+        <!--
+        1. 单向绑定 one way bining : Source -> Target
+        2. 双向绑定 two way bining : Source <-> Target
+        3. 指定方向单向绑定 oneWayToSource Target -> Source
+        4. 单次绑定 One Time -> 构造方法中单次执行
+        -->
+    <StackPanel>
+        <TextBox Name="myTextBox" Width="100" Margin="50" Text="{Binding ElementName=mySlider, Path=Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+        <Slider Name="mySlider" Minimum="0" Maximum="100" IsSnapToTickEnabled="True"></Slider>
+    </StackPanel>
+</Window>
